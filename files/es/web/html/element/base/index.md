@@ -9,7 +9,7 @@ slug: Web/HTML/Element/base
 
 El **elemento HTML `<base>`** especifica la dirección URL base que se utilizará para todas las direcciones URL relativas contenidas dentro de un documento. Sólo puede haber un elemento \<base> en un documento.
 
-La dirección URL base de un documento puede ser consultado a partir de una secuencia de comandos con {{domxref('document.baseURI')}}.
+La dirección URL base de un documento se puede consultar a partir de un script con {{domxref('document.baseURI')}}.
 
 > **Nota:** Si se especifican varios elementos \<base>, se utilizá sólo la primera sección **href** y el primer valor **target**; los demás son ignorados.
 
@@ -69,15 +69,15 @@ La dirección URL base de un documento puede ser consultado a partir de una secu
 Este elemento incluye los [atributos globales](/es/docs/Web/HTML/Atributos_Globales).
 
 - `href`
-  - : La dirección URL base que se usa en todo el documento para las direcciones URL relativas. Si no se especifica este atributo, este elemento debe venir antes de cualesquiera otros elementos con atributos cuyos valores son direcciones URL. Se permiten las direcciones URL absolutas y relativas.
+  - : La dirección URL base que se usa en todo el documento para las direcciones URL relativas. Si no se especifica este atributo, este elemento debe venir antes de cualesquier otro elemento con atributos cuyos valores son direcciones URL. Se permiten las direcciones URL absolutas y relativas.
 - `target`
 
-  - : Un nombre o una palabra clave que indica la ubicación predeterminada para navegar por el resultado de hipervínculos o formas, para los elementos que no tienen una referencia explícita del objetivo . Es un nombre o una palabra clave para un contexto de navegación (por ejemplo: pestaña, ventana o marco en línea). Las siguientes palabras clave tienen un significado especial: tab, window, o inline frame).Las siguientes palabras clave tienen un significado especial:
+  - : Un nombre o una palabra clave que indica la ubicación predeterminada para navegar por el resultado de hipervínculos o formas, para los elementos que no tienen una referencia explícita del objetivo. Es un nombre o una palabra clave para un contexto de navegación (por ejemplo: pestaña, ventana o marco en línea). Las siguientes palabras clave tienen un significado especial: tab, window, o inline frame). Las siguientes palabras clave tienen un significado especial:
 
-    - `_self`: Carga el resultado en el mismo contexto de navegación que el actual. Este valor es el valor por defecto si no se especifica el atributo.
-    - `_blank`: Carga el resultado en un nuevo contexto de navegación sin nombre .
-    - `_parent`: Cargar el resultado en el contexto de navegación padre del actual. Si no hay padre, esta opción se comporta de la misma manera que \_self.
-    - `_top`: Carga el resultado en el contexto de nivel superior de navegación (es decir, el contexto de navegación que es un ancestro de la actual, y no tiene padre). Si no hay padre, esta opción se comporta de la misma manera que \_self.
+    - `_self`: Carga el resultado en el mismo contexto de navegación que el actual. Este valor es el valor predeterminado si no se especifica el atributo.
+    - `_blank`: Carga el resultado en un nuevo contexto de navegación sin nombre.
+    - `_parent`: Carga el resultado en el contexto de navegación padre del actual. Si no hay padre, esta opción se comporta de la misma manera que \_self.
+    - `_top`: Carga el resultado en el contexto de nivel superior de navegación (es decir, el contexto de navegación que es un ancestro del actual, y no tiene padre). Si no hay padre, esta opción se comporta de la misma manera que \_self.
 
 ## Ejemplos
 
