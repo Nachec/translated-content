@@ -5,12 +5,12 @@ slug: Web/API/FileReader/load_event
 
 {{APIRef}}
 
-La propiedad **`FileReader.onload`** contiene un controlador de evento ejecutado cuando [`load`](/es/docs/Web/Reference/Events/load) es ejecutado, cuando el contenido es leído con [`readAsArrayBuffer`](/es/docs/Web/API/FileReader/readAsArrayBuffer), [`readAsBinaryString`](/es/docs/Web/API/FileReader/readAsBinaryString), [`readAsDataURL`](/es/docs/Web/API/FileReader/readAsDataURL) o [`readAsText`](/es/docs/Web/API/FileReader/readAsText) está habilitado.
+La propiedad **`FileReader.onload`** contiene un controlador de evento ejecutado cuando [`load`](/es/docs/Web/Reference/Events/load) es ejecutado, cuando está habilitada la lectura del contenido con [`readAsArrayBuffer`](/es/docs/Web/API/FileReader/readAsArrayBuffer), [`readAsBinaryString`](/es/docs/Web/API/FileReader/readAsBinaryString), [`readAsDataURL`](/es/docs/Web/API/FileReader/readAsDataURL) o [`readAsText`](/es/docs/Web/API/FileReader/readAsText).
 
 ## Ejemplo
 
 ```js
-// Respuest desde un <input type="file" onchange="onChange(event)">
+// Respuesta desde un <input type="file" onchange="onChange(event)">
 function onChange(event) {
   var file = event.target.files[0];
   var reader = new FileReader();
