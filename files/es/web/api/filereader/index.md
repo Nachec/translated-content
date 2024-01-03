@@ -7,9 +7,9 @@ slug: Web/API/FileReader
 
 ## Sumario
 
-El objeto FileReader permite que las aplicaciones web lean ficheros (o información en buffer) almacenados en el cliente de forma asíncrona, usando los objetos {{domxref("File")}} o {{domxref("Blob")}} dependiendo de los datos que se pretenden leer.
+El objeto FileReader permite que las aplicaciones web lean ficheros (o información en buffer) almacenados en el cliente de forma asíncrona, usando los objetos {{domxref("File")}} o {{domxref("Blob")}} dependiendo de los datos que se pretende leer.
 
-El objeto File puede ser obtenido desde un objeto {{domxref("FileList")}} devuelto como resultado de la selección de archivos por parte del usuario en un elemento {{HTMLElement("input")}}, desde el objeto [`DataTransfer`](/es/docs/Web/API/DataTransfer) producido por una operación de arrastre (drag and drop) o desde la API mozGetAsFile () en un {{domxref("HTMLCanvasElement")}}.
+El objeto File se puede obtener desde un objeto {{domxref("FileList")}} devuelto como resultado de la selección de archivos por parte del usuario en un elemento {{HTMLElement("input")}}, desde el objeto [`DataTransfer`](/es/docs/Web/API/DataTransfer) producido por una operación de arrastre (drag and drop) o desde la API mozGetAsFile () en un {{domxref("HTMLCanvasElement")}}.
 
 ## Constructor
 
@@ -27,9 +27,9 @@ Mira el artículo _[Using files from web applications](/es/docs/Using_files_from
 
   - : Devuelve un entero que indica el estado de FileReader. Puede ser uno de los siguientes:
 
-    | `EMPTY`   | `0` | No ha sido leido ningún dato aún.         |
+    | `EMPTY`   | `0` | No se ha leido ningún dato aún.           |
     | --------- | --- | ----------------------------------------- |
-    | `LOADING` | `1` | La información está siendo leída.         |
+    | `LOADING` | `1` | Se está leyendo la información.           |
     | `DONE`    | `2` | Se ha completado la solicitud de lectura. |
 
 - {{domxref("FileReader.result")}} {{readonlyinline}}
